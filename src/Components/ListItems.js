@@ -4,12 +4,25 @@ class ListItems extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            numbers: [1, 2, 3, 4, 5]
+            numbers: [
+                {
+                id: 1,
+                name: 'A'
+                },
+                {
+                id: 2,
+                name: 'B'
+                },
+                {
+                id: 3,
+                name: 'C'
+                }
+            ]
          }
     }
     render() { 
 
-        let listItems = this.state.numbers.map((number) =><li key={number.toString()}>{number}</li>);
+        let listItems = this.state.numbers.map((number) =><li key={number.id}>{number.name}</li>);
 
         return ( <ul>{listItems}</ul> );
     }
