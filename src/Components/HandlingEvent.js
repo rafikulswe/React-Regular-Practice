@@ -10,11 +10,15 @@ class HandlingEvent extends Component {
     handleClick () {
         console.log('Rafi', this);
     }
+    //Not need to bind.
+    changeHandler = () => {
+        console.log('Rafi', this);
+    }
     render() { 
         return ( 
             <div>
                 <button onClick={this.handleClick}>Click me</button>
-                <button onClick={this.handleClick}>Another</button>
+                <button onClick={this.changeHandler}>Best</button>
             </div>
         );
     }
