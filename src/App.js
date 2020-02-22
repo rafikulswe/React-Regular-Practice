@@ -4,6 +4,7 @@ import './App.css';
 import MainConcept from "./Components/MainConcept";
 import Clock from "./Components/Clock";
 import HandlingEvent from "./Components/HandlingEvent";
+import ListItems from "./Components/ListItems";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 				<Clock date={new Date()}/>
 				<MainConcept />
 				<HandlingEvent />
+				<ListItems />
 			</p>
 		</div>
 	);
