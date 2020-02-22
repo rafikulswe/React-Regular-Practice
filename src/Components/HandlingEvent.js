@@ -3,11 +3,12 @@ import React, {Component} from 'react'
 class HandlingEvent extends Component {
     constructor(props) {
         super(props);
+        this.handleClick = this.handleClick.bind(this);
         this.state = {  }
     }
-    //it's working good without binding.
-    handleClick = () => {
-        console.log('Rafi', this)
+    //If we use this function we have to bind this function.
+    handleClick () {
+        console.log('Rafi', this);
     }
     render() { 
         return ( 
